@@ -1,0 +1,29 @@
+/* Global layout and theme setup */
+@import "./animations.css";
+@import "./responsive.css";
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #05050f;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* Card Glow Utility */
+.card-glow-purple {
+  position: relative;
+}
+
+.card-glow-purple::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(79, 70, 229, 0.1), transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}

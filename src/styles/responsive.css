@@ -1,0 +1,41 @@
+/* Responsive and Layout Specific Tweaks */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060511;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e1d52;
+  border-radius: 4px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5b21b6;
+}
+
+/* Base typography helper */
+.font-display {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Touch targets & Mobile overflow prevention */
+@media (max-width: 640px) {
+  .touch-btn {
+    min-height: 44px;
+  }
+}

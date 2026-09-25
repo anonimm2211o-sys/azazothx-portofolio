@@ -1,0 +1,471 @@
+@keyframes overlayFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.06);
+    filter: blur(8px);
+    visibility: hidden;
+  }
+}
+
+.animate-overlay-fade-out {
+  animation: overlayFadeOut 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: none;
+}
+
+@keyframes floatSmooth {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(2deg);
+  }
+}
+
+@keyframes floatSmoothReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(14px) rotate(-2deg);
+  }
+}
+
+@keyframes floatOrbitSlow {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.04);
+  }
+}
+
+@keyframes pulseGlowRadiant {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(1);
+    filter: drop-shadow(0 0 25px rgba(168, 85, 247, 0.45));
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 55px rgba(217, 70, 239, 0.85));
+  }
+}
+
+@keyframes coreRotate3D {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.03);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes radarSweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes radarSweepReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Orbit Rotation & Counter-Rotation */
+@keyframes orbitSpinCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitSpinCCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counterSpinCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counterSpinCCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Black Hole Singularity Animations */
+@keyframes blackHoleSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blackHoleLensing {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.12) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes particleSuck {
+  0% {
+    transform: rotate(var(--rot, 0deg)) translateX(140px) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(calc(var(--rot, 0deg) + 720deg)) translateX(0px) scale(0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes photonRingGlow {
+  0%, 100% {
+    box-shadow: 0 0 35px rgba(217, 70, 239, 0.9), 0 0 70px rgba(168, 85, 247, 0.6), inset 0 0 20px rgba(6, 182, 212, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 55px rgba(236, 72, 153, 1), 0 0 100px rgba(147, 51, 234, 0.9), inset 0 0 35px rgba(59, 130, 246, 0.9);
+  }
+}
+
+/* Computer Rig Cyber Animations */
+@keyframes pcFanSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pcFanSpinTurbo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ramRgbWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes circuitPulse {
+  0%, 100% {
+    opacity: 0.3;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    opacity: 1;
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes aioCoolerPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6), inset 0 0 10px rgba(6, 182, 212, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(217, 70, 239, 0.9), inset 0 0 20px rgba(6, 182, 212, 0.9);
+  }
+}
+
+@keyframes scanlineGlitch {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(1200%);
+    opacity: 0;
+  }
+}
+
+@keyframes neonBorderFlow {
+  0%, 100% {
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2), inset 0 0 10px rgba(168, 85, 247, 0.1);
+  }
+  50% {
+    border-color: rgba(217, 70, 239, 0.75);
+    box-shadow: 0 0 30px rgba(217, 70, 239, 0.45), inset 0 0 20px rgba(217, 70, 239, 0.25);
+  }
+}
+
+@keyframes energyWave {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Class Helpers */
+.animate-float-slow {
+  animation: floatSmooth 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatOrbitSlow 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatSmoothReverse 5.5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlowRadiant 4s ease-in-out infinite;
+}
+
+.animate-core-rotate {
+  animation: coreRotate3D 20s ease-in-out infinite;
+}
+
+.animate-radar-cw {
+  animation: radarSweep 18s linear infinite;
+}
+
+.animate-radar-ccw {
+  animation: radarSweepReverse 24s linear infinite;
+}
+
+.animate-scanline {
+  animation: scanlineGlitch 6s ease-in-out infinite;
+}
+
+.animate-border-glow {
+  animation: neonBorderFlow 3.5s ease-in-out infinite;
+}
+
+.animate-energy-wave {
+  animation: energyWave 3s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+/* Black Hole Classes */
+.animate-black-hole {
+  animation: blackHoleSpin 22s linear infinite;
+}
+
+.animate-accretion-reverse {
+  animation: blackHoleSpin 14s linear infinite reverse;
+}
+
+.animate-photon-ring {
+  animation: photonRingGlow 3s ease-in-out infinite;
+}
+
+/* PC Rig Animation Classes */
+.animate-fan-spin {
+  animation: pcFanSpin 1.4s linear infinite;
+}
+
+.animate-fan-spin-turbo {
+  animation: pcFanSpinTurbo 0.45s linear infinite;
+}
+
+.animate-ram-rgb {
+  background-size: 200% 200%;
+  animation: ramRgbWave 3s ease infinite;
+}
+
+.animate-aio-cooler {
+  animation: aioCoolerPulse 2.5s ease-in-out infinite;
+}
+
+/* Orbit classes with matched counter-rotation */
+.orbit-ring-1 {
+  animation: orbitSpinCW 24s linear infinite;
+}
+.orbit-ring-1 .counter-orb {
+  animation: counterSpinCW 24s linear infinite;
+}
+
+.orbit-ring-2 {
+  animation: orbitSpinCCW 36s linear infinite;
+}
+.orbit-ring-2 .counter-orb {
+  animation: counterSpinCCW 36s linear infinite;
+}
+
+.orbit-ring-3 {
+  animation: orbitSpinCW 48s linear infinite;
+}
+.orbit-ring-3 .counter-orb {
+  animation: counterSpinCW 48s linear infinite;
+}
+
+/* Hero Auto-Orbiting Satellites */
+.hero-orbit-1 {
+  animation: orbitSpinCW 20s linear infinite;
+  will-change: transform;
+}
+.hero-orbit-1 .hero-counter {
+  animation: counterSpinCW 20s linear infinite;
+  will-change: transform;
+}
+
+.hero-orbit-2 {
+  animation: orbitSpinCCW 28s linear infinite;
+  will-change: transform;
+}
+.hero-orbit-2 .hero-counter {
+  animation: counterSpinCCW 28s linear infinite;
+  will-change: transform;
+}
+
+.hero-orbit-3 {
+  animation: orbitSpinCW 36s linear infinite;
+  will-change: transform;
+}
+.hero-orbit-3 .hero-counter {
+  animation: counterSpinCW 36s linear infinite;
+  will-change: transform;
+}
+
+/* Fast Warp Mode for Hero */
+.hero-warp .hero-orbit-1 {
+  animation-duration: 7s !important;
+}
+.hero-warp .hero-orbit-1 .hero-counter {
+  animation-duration: 7s !important;
+}
+.hero-warp .hero-orbit-2 {
+  animation-duration: 10s !important;
+}
+.hero-warp .hero-orbit-2 .hero-counter {
+  animation-duration: 10s !important;
+}
+.hero-warp .hero-orbit-3 {
+  animation-duration: 12s !important;
+}
+.hero-warp .hero-orbit-3 .hero-counter {
+  animation-duration: 12s !important;
+}
+
+/* Paused State */
+.hero-paused .hero-orbit-1,
+.hero-paused .hero-orbit-2,
+.hero-paused .hero-orbit-3,
+.hero-paused .hero-counter {
+  animation-play-state: paused !important;
+}
+
+/* Orbit Hyperdrive Mode */
+.orbit-hyperdrive .orbit-ring-1 {
+  animation: orbitSpinCW 8s linear infinite !important;
+}
+.orbit-hyperdrive .orbit-ring-1 .counter-orb {
+  animation: counterSpinCW 8s linear infinite !important;
+}
+
+.orbit-hyperdrive .orbit-ring-2 {
+  animation: orbitSpinCCW 12s linear infinite !important;
+}
+.orbit-hyperdrive .orbit-ring-2 .counter-orb {
+  animation: counterSpinCCW 12s linear infinite !important;
+}
+
+.orbit-hyperdrive .orbit-ring-3 {
+  animation: orbitSpinCW 16s linear infinite !important;
+}
+.orbit-hyperdrive .orbit-ring-3 .counter-orb {
+  animation: counterSpinCW 16s linear infinite !important;
+}
+
+/* Orbit Paused */
+.orbit-paused .orbit-ring-1,
+.orbit-paused .orbit-ring-2,
+.orbit-paused .orbit-ring-3,
+.orbit-paused .counter-orb {
+  animation-play-state: paused !important;
+}
+
+/* Glassmorphism & Cybernetic Panels */
+.glass-panel {
+  background: rgba(11, 8, 28, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(168, 85, 247, 0.22);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 13, 44, 0.9);
+  border-color: rgba(217, 70, 239, 0.55);
+  box-shadow: 0 14px 40px -5px rgba(168, 85, 247, 0.32), 0 0 20px rgba(192, 132, 252, 0.2);
+  transform: translateY(-5px);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 15px rgba(192, 132, 252, 0.75), 0 0 30px rgba(147, 51, 234, 0.5);
+}
+
+.cosmic-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Accessible smooth motion */
+.reduced-motion-active {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+}
