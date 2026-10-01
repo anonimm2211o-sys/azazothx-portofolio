@@ -49,7 +49,7 @@ export default function About() {
   return (
     <section
       id="tentang"
-      aria-label="Tentang Azazothx - Bagas Satrio Putra"
+      aria-label="Tentang Azazothx - Azazothx"
       className="py-20 md:py-28 relative z-10"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +72,7 @@ export default function About() {
         {/* Top Two-Column Grid: Left (Bio Details) & Right (Rakitan Komputer Bisuak Cyber Rig) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-14">
           
-          {/* Sisi Kiri: Profil Lengkap Bagas Satrio Putra */}
+          {/* Sisi Kiri: Profil Lengkap Azazothx */}
           <div className="lg:col-span-6 space-y-6">
             
             {/* Main Bio Card */}
@@ -87,7 +87,7 @@ export default function About() {
                   </span>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/40 text-xs font-mono text-purple-300">
-                  SMP Sandikta • Kelas 9
+                  SMP
                 </span>
               </div>
 
@@ -101,7 +101,7 @@ export default function About() {
                     <span>Nama</span>
                   </div>
                   <p className="text-sm font-display font-bold text-white leading-tight">
-                    Bagas Satrio Putra
+                    Azazothx
                   </p>
                   <span className="text-[10px] font-mono text-cyan-300 block">Alias: Azazothx</span>
                 </div>
@@ -125,9 +125,9 @@ export default function About() {
                     <span>Sekolah</span>
                   </div>
                   <p className="text-sm font-display font-bold text-white leading-tight">
-                    SMP Sandikta
+                    SMP
                   </p>
-                  <span className="text-[10px] font-mono text-emerald-300 block">Kelas 9</span>
+                  <span className="text-[10px] font-mono text-emerald-300 block">SMP</span>
                 </div>
 
               </div>
@@ -135,7 +135,7 @@ export default function About() {
               {/* Bio Description Narrative framed around beginner developer & vibe coder */}
               <div className="space-y-3.5 text-sm sm:text-base text-slate-300 leading-relaxed font-sans pt-1">
                 <p>
-                  Halo! Saya <strong>Bagas Satrio Putra</strong>, seorang <strong>programmer pemula</strong> sekaligus <strong>vibe coder</strong> yang berasal dari <strong>Bekasi</strong> dan saat ini sedang menempuh pendidikan di <strong>SMP Sandikta, Kelas 9</strong>.
+                  Halo! Saya <strong>Azazothx</strong>, seorang <strong>programmer pemula</strong> sekaligus <strong>vibe coder</strong> yang berasal dari <strong>Bekasi</strong> dan saat ini sedang menempuh pendidikan di <strong>SMP, SMP</strong>.
                 </p>
                 
                 <p>
