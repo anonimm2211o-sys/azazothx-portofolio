@@ -42,7 +42,7 @@ export default function Footer() {
                 Azazothx
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-purple-400" />
-              <span className="text-xs font-mono text-purple-300">Bagas Satrio Putra</span>
+              <span className="text-xs font-mono text-purple-300">Azazothx</span>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 max-w-sm">
               {personalInfo.school} ({personalInfo.grade}) • {personalInfo.origin}
@@ -79,7 +79,7 @@ export default function Footer() {
         {/* Bottom Credits & Quote */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center sm:text-left font-mono">
           <p>
-            {personalInfo.copyright} • SMP Sandikta Kelas 9 Bekasi.
+            {personalInfo.copyright} • SMP SMP Bekasi.
           </p>
 
           <p className="text-purple-300/80">
