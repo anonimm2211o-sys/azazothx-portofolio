@@ -124,7 +124,7 @@ export default function Hero() {
   // Orbital Radii for badges based on screen
   // Ring 1 (Inner): React.js & Bekasi Node
   const r1 = 145; 
-  // Ring 2 (Outer): SMP Sandikta & Vibe Coder
+  // Ring 2 (Outer): SMP & Vibe Coder
   const r2 = 195;
 
   // Calculate live X, Y positions for satellites
@@ -158,13 +158,13 @@ export default function Hero() {
   return (
     <section
       id="beranda"
-      aria-label="Hero Section Azazothx - Bagas Satrio Putra"
+      aria-label="Hero Section Azazothx - Azazothx"
       className="relative min-h-[92vh] md:min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center justify-center overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Sisi Kiri: Teks & Identitas Bagas Satrio Putra */}
+          {/* Sisi Kiri: Teks & Identitas Azazothx */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
             
             {/* Status Pill with Pulsing Live Status & Identity Subtag */}
@@ -174,7 +174,7 @@ export default function Hero() {
             >
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping opacity-75" />
               <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399] -ml-4" />
-              <span className="tracking-wide">Bagas Satrio Putra • SMP Sandikta (Kelas 9)</span>
+              <span className="tracking-wide">Azazothx • SMP</span>
               <Sparkles className="w-3.5 h-3.5 text-purple-400 animate-pulse" />
             </div>
 
@@ -195,7 +195,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="font-mono text-sm sm:text-base text-slate-300">
-                (Nama asli: <strong className="text-purple-300">Bagas Satrio Putra</strong> • Asal Bekasi)
+                (Nama asli: <strong className="text-purple-300">Azazothx</strong> • Asal Bekasi)
               </p>
             </div>
 
@@ -246,10 +246,10 @@ export default function Hero() {
             {/* Quick Metrics / Focus Badges */}
             <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-slate-400">
               <span className="px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-purple-500/30 text-purple-200 flex items-center gap-1.5 shadow-[0_0_12px_rgba(168,85,247,0.15)] animate-float-slow hover:border-purple-400 transition-colors">
-                <GraduationCap className="w-3.5 h-3.5 text-purple-400" /> SMP Sandikta Kelas 9
+                <GraduationCap className="w-3.5 h-3.5 text-purple-400" /> SMP SMP
               </span>
               <span className="px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-cyan-500/30 text-cyan-200 flex items-center gap-1.5 shadow-[0_0_12px_rgba(6,182,212,0.15)] animate-float-medium hover:border-cyan-400 transition-colors">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" /> Asal Bekasi, ID
+                <MapPin className="w-3.5 h-3.5 text-cyan-400" /> Indonesia
               </span>
               <span className="px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-indigo-500/30 text-indigo-200 flex items-center gap-1.5 shadow-[0_0_12px_rgba(99,102,241,0.15)] animate-float-reverse hover:border-indigo-400 transition-colors">
                 <Bot className="w-3.5 h-3.5 text-indigo-400" /> AI Vibe Coder
@@ -342,7 +342,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Satellite 3: SMP Sandikta */}
+              {/* Satellite 3: SMP */}
               <div 
                 className="absolute pointer-events-auto z-20 cursor-pointer"
                 style={{
@@ -355,7 +355,7 @@ export default function Hero() {
                   <div className="w-5 h-5 rounded-lg bg-fuchsia-950/80 flex items-center justify-center border border-fuchsia-500/40">
                     <Terminal className="w-3.5 h-3.5 text-emerald-400" />
                   </div>
-                  <span className="font-mono font-bold tracking-wide">SMP Sandikta</span>
+                  <span className="font-mono font-bold tracking-wide">SMP</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-fuchsia-400 animate-ping" />
                 </div>
               </div>
@@ -394,7 +394,7 @@ export default function Hero() {
                       AZAZOTHX
                     </span>
                     <span className="text-[10px] font-mono text-cyan-300/90 mt-0.5">
-                      BAGAS SATRIO P.
+                      AZAZOTHX
                     </span>
                   </div>
 
@@ -411,7 +411,7 @@ export default function Hero() {
                 <Radio className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
                 <span>
                   {activeSatellite === 'react' && 'Node React.js: Framework antarmuka interaktif utama Azazothx'}
-                  {activeSatellite === 'sandikta' && 'Node SMP Sandikta: Siswa aktif Kelas 9, domisili Bekasi'}
+                  {activeSatellite === 'sandikta' && 'Node SMP: Siswa aktif SMP, domisili Bekasi'}
                   {activeSatellite === 'vibecoder' && 'Node Vibe Coder: Memadukan ide, logika, dan prompt AI'}
                   {activeSatellite === 'bekasi' && 'Node Bekasi: Pusat komputasi dan workstation Bagas'}
                 </span>
