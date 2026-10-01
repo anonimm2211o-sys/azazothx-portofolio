@@ -1,29 +1,27 @@
 /**
- * Data Proyek, Skill, dan Informasi Azazothx (Bagas Satrio Putra)
+ * Data Proyek, Skill, dan Informasi Azazothx (Azazothx)
  */
 
 export const personalInfo = {
   name: "Azazothx",
-  realName: "Bagas Satrio Putra",
-  origin: "Bekasi, Jawa Barat, Indonesia",
-  school: "SMP Sandikta",
-  grade: "Kelas 9",
+  origin: "Indonesia",
+  school: "SMP",
+  grade: "SMP",
   status: "Programmer Pemula & Vibe Coder",
   learningStage: "Sedang bertahap memahami fundamental AI, logika pemrograman, arsitektur web modern, dan eksplorasi teknologi.",
   tagline: "Developer • Vibe Coder • Technology Enthusiast",
   shortDesc: "Suka membangun sesuatu, bereksperimen dengan teknologi, dan memanfaatkan AI untuk mengubah ide menjadi proyek nyata.",
-  heroDesc: "Saya adalah programmer pemula dan seorang vibe coder asal Bekasi, saat ini bersekolah di SMP Sandikta (kelas 9). Saya sedang bertahap mendalami fundamental AI, web development, dan suka ngoprek untuk mengubah ide menjadi karya nyata.",
-  aboutDesc: "Halo! Nama asli saya adalah Bagas Satrio Putra, dan di dunia digital saya dikenal sebagai Azazothx. Saya adalah seorang siswa kelas 9 di SMP Sandikta asal Bekasi yang memiliki ketertarikan tinggi pada dunia pemrograman, AI, dan teknologi komputer.",
+  heroDesc: "Saya adalah programmer pemula dan seorang vibe coder di Indonesia, saat ini bersekolah di SMP (kelas 9). Saya sedang bertahap mendalami fundamental AI, web development, dan suka ngoprek untuk mengubah ide menjadi karya nyata.",
+  aboutDesc: "Halo! Nama asli saya adalah Azazothx, dan di dunia digital saya dikenal sebagai Azazothx. Saya adalah seorang siswa kelas 9 di SMP di Indonesia yang memiliki ketertarikan tinggi pada dunia pemrograman, AI, dan teknologi komputer.",
   learningNote: "Sebagai programmer pemula dan vibe coder, saya berfokus pada proses belajar yang bertahap: memahami logika dasar, bereksperimen dengan tools AI (prompt & context engineering), membongkar kode, dan langsung membangun proyek fungsional.",
-  copyright: "© 2026 Azazothx (Bagas Satrio Putra)",
+  copyright: "© 2026 Azazothx (Azazothx)",
   footerQuote: "Dibuat dengan JavaScript, React, rasa ingin tahu, dan semangat ngoprek tanpa henti.",
 };
 
 export const rigSpecs = {
   title: "Bisuak Cyber Rig v2.6",
-  owner: "Bagas Satrio Putra",
-  school: "SMP Sandikta (Kelas 9)",
-  location: "Bekasi, ID",
+  school: "SMP",
+  location: "Indonesia",
   specs: [
     { label: "Processor", val: "Quantum Vibe Core (AI-Boosted)" },
     { label: "Cooler", val: "Dual 240mm ARGB Liquid AIO" },
@@ -371,9 +369,9 @@ export const contactsData = [
   },
   {
     platform: "Email",
-    label: "bagassatrioputra06@gmail.com",
-    url: "mailto:bagassatrioputra06@gmail.com",
-    desc: "Hubungi langsung Bagas Satrio Putra",
+    label: "contact@azazothx.dev",
+    url: "mailto:contact@azazothx.dev",
+    desc: "Hubungi langsung",
     icon: "Mail",
     color: "hover:border-purple-400 hover:text-purple-300 hover:shadow-purple-500/20"
   }
